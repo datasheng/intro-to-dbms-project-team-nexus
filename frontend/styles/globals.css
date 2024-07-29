@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pageContent {
+    padding-top: 5rem; /* Adjust the top padding to account for the fixed header height */
+  }
+  
+  /* Ensure all elements inherit the font family */
+  *, *::before, *::after {
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  
+  /* Common button styles */
+  .button {
+    background-color: #fff;
+    color: #333;
+    border: solid 2px #333;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+    height: 70px;
+    margin-top: 2rem;
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  

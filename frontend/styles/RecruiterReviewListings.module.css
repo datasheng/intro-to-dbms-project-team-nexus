@@ -1,0 +1,58 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 6rem; /* Manually push down the content */
+    margin-top: 3rem; /* Adjust position on the page */
+  }
+  .title {
+    font-size: 2rem; /* Ensure the title size matches */
+    margin-bottom: 2rem; /* Space below the title */
+    text-align: center;
+  }
+  
+  .jobList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .jobCard {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow */
+    border: solid 2px #333; /* Thicker border */
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Button styles */
+  .button {
+    background-color: #fff;
+    color: #333;
+    border: solid 2px #333; /* Thicker border */
+    border-radius: 20px;
+    width: 200px; /* Ensure the buttons are the same size */
+    height: 50px; /* Adjust height if needed */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9rem; /* Smaller font size */
+    text-align: center;
+    font-weight: normal; /* Not bold */
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  

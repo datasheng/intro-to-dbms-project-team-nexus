@@ -1,0 +1,110 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 2rem 2rem; /* Adjust padding to account for fixed header */
+    margin-top: 3rem; /* Adjust position on the page */
+  }
+  
+  .title {
+    font-size: 2rem; /* Ensure the title size matches */
+    margin-bottom: 2rem; /* Space below the title */
+    text-align: center;
+  }
+  
+  .candidatesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .candidateCard {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: solid 2px #333;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .button {
+    background-color: #fff;
+    color: #333;
+    border: solid 2px #333;
+    border-radius: 20px;
+    width: 200px;
+    height: 70px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+    line-height: 1.5rem; /* Adjust line-height to center the text vertically */
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1100; /* Higher than the header's z-index */
+  }
+  
+  .modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 100%;
+    max-height: 80vh; /* Set a max height */
+    overflow-y: auto; /* Add vertical scrolling */
+  }
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .input {
+    width: 100%;
+    height: 1.8rem;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #fffcfc;
+    margin-top: 0.5rem; /* Space between label and input */
+  }
+  
+  .textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-top: 0.5rem; /* Space between label and textarea */
+  }
+  
+  .button_styles {
+    display: flex;
+    gap: 2rem; /* Increase gap between buttons */
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  
+
+  

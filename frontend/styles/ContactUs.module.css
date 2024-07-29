@@ -1,0 +1,66 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 2rem 2rem; /* Adjust padding to account for fixed header */
+    margin-top: 3rem; /* Adjust position on the page */
+  }
+  
+  .title {
+    font-size: 2rem; /* Ensure the title size matches */
+    margin-bottom: 2rem; /* Space below the title */
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .label {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .input, .textarea {
+    width: 100%;
+    max-width: 600px; /* Make sure the input fields are not too wide */
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 0.5rem;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Button styles */
+  .button {
+    background-color: #fff;
+    color: #333;
+    border: solid 2px #333;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0;
+  }
+  

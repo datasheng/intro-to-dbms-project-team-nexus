@@ -1,0 +1,35 @@
+/* src/components/JobCard.module.css */
+.card {
+  width: 420px;
+  height: 200px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.job_title {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.job_info {
+  margin: 0;
+  color: #555;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: 1px solid black;
+  border-radius: 14px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,56 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 6rem; /* Manually push down the content */
+    margin-top: 3rem; /* Adjust position on the page */
+  }
+  
+  .title {
+    font-size: 3rem; /* Make the title larger */
+    margin-bottom: 1rem; /* Space below the title */
+    text-align: center;
+    position: relative;
+  }
+  
+  .title::after {
+    content: '';
+    display: block;
+    width: 100px; /* Width of the line */
+    height: 2px; /* Height of the line */
+    background: #333; /* Color of the line */
+    margin: 0.5rem auto 0; /* Center the line */
+  }
+
+ .buttonContainer {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  gap: 1.5rem; /* Gap between buttons */
+  margin-top: 2rem; /* Add space above the buttons */
+}
+
+/* Button styles */
+.button {
+  background-color: #fff;
+  color: #333;
+  border: solid 2px #333; /* Thicker border */
+  border-radius: 20px;
+  width: 250px; /* Make the buttons wider */
+  height: 70px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+  
+  
+  
+  

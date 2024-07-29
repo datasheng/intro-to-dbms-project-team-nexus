@@ -1,0 +1,83 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  height: 4.5rem;
+  width: 100%; /* Make the header fill the entire width */
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.left_side {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-right: 2rem;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.nav_link:hover {
+  color: #0070f3;
+}
+
+.right_side {
+  display: flex;
+  align-items: center;
+  margin-right: 3.5rem; /* Adjust this value if needed */
+}
+
+.button_styles {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.button {
+  background-color: #fff;
+  color: #333;
+  border: solid;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: 2rem; /* Add margin to move the buttons to the right */
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
