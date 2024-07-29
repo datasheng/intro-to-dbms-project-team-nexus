@@ -58,4 +58,5 @@ def login():
         return jsonify({'message': 'Login successful', 'user': user.to_dict()}), 200
     else:
         return jsonify({'message': 'Invalid email or password'}), 401
+    
 
