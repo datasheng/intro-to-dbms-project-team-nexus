@@ -37,9 +37,23 @@ const RecruiterReviewListings: React.FC = () => {
     fetchJobs();
   }, []);
 
-  const handleDeleteListing = async (jobId: number) => {
-    console.log("Delete listing for job:", jobId);
-    // Implement delete functionality here
+   const handleDeleteListing = async (jobId: number) => {
+    try {
+      const response = await fetch(`http://127.0.0.1:8000/job_postings/${jobId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setJobs(jobs.filter((job) => job.id !== jobId));
+      } else {
+        console.error("Failed to delete job posting");
+      }
+    } catch (error) {
+      console.error("Error deleting job posting:", error);
+    }
   };
 
   return (
