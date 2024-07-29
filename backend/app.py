@@ -1,5 +1,6 @@
 from app_init import create_app
 from updated_routes.user_routes import user_bp
+from updated_routes.revenue_routes import revenue_bp
 from updated_routes.resume_routes import resume_bp
 from updated_routes.job_offerer_routes import job_offerer_bp
 from updated_routes.job_posting_routes import job_posting_bp
@@ -11,6 +12,7 @@ from updated_routes.messages_routes import message_bp
 
 app = create_app()
 app.register_blueprint(user_bp)
+app.register_blueprint(revenue_bp)
 app.register_blueprint(resume_bp)
 app.register_blueprint(job_offerer_bp)
 app.register_blueprint(job_posting_bp)

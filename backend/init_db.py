@@ -1,6 +1,7 @@
 # init_db.py
 from app_init import create_app, db
 from updated_models.user import User
+from updated_models.revenue import Revenue
 from updated_models.job_offerer import JobOfferer  # Ensure this is imported first
 from updated_models.job_seekers import JobSeeker  # Ensure this is imported first
 from updated_models.interviews import Interview
