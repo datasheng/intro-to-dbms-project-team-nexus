@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Seekers</title>
+</head>
+<body>
+    <h1>Job Seekers</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Created At</th>
+                <th>Updated At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for jobseeker in jobseekers %}
+            <tr>
+                <td>{{ jobseeker.id }}</td>
+                <td>{{ jobseeker.user_id }}</td>
+                <td>{{ jobseeker.first_name }}</td>
+                <td>{{ jobseeker.last_name }}</td>
+                <td>{{ jobseeker.created_at }}</td>
+                <td>{{ jobseeker.updated_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+

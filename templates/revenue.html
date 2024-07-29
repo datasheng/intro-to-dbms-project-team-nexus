@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue</title>
+</head>
+<body>
+    <h1>Revenue</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for revenue in revenue %}
+            <tr>
+                <td>{{ revenue.id }}</td>
+                <td>{{ revenue.amount }}</td>
+                <td>{{ revenue.date }}</td>
+                <td>{{ revenue.role }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
